@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mini IMDb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/indexstyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    
+    <nav class="navbar bg-dark px-2 sticky-top">
+      <div class="container-fluid justify-content-start">
+        <a class="navbar-brand" href="#">
+          <img id="movie-icon"
+            src="/assets/images/logo.png"
+            alt=""
+            width="45"
+            height="45"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <div id="home">
+          <a href="#"><i class="fa-solid fa-house"></i></a>
+        </div>
+
+        <!-- Search Bar-->
+        <div id="search-bar" class="mx-auto">
+          <form action="" autocomplete="off">
+            <input
+              type="search"
+              placeholder="Search "
+              id="search"
+              autocomplete="off"
+            />
+
+            <button id="search-btn">
+                <i class="fas fa-search fa-lg" style="color: #0a0a0a;"></i>
+            </button>
+          </form>
+        </div >
+        <!--Contacts which contains social media icons-->
+        <div id="contacts">
+        <a href="#contact"><i class="fas fa-address-book fa-lg"></i></a>
+        </div>
+     
+      </div>
+    </nav>
+
+    <div id="main-container" class="d-flex justify-content-between">
+      <main id="main-section">
+        <div id="suggestion-container" class="d-flex">
+          <p id="empty-search-text" class="text fs-1 pt-5 ms-4">
+            Search for any movie
+          </p>
+          <div id="card-container">
+          </div>
+        </div>
+      </main>
+      <section id="favorites-section" class="animate__animated">
+        <h2 id="fav-heading">Favourites</h2>
+
+        <div id="empty-fav-text">
+          <p class="fs-5 mx-3 text-muted">
+            Your favorite movies
+          </p>
+        </div>
+
+        <div id="fav-movies-container" class=".flex-column mx-auto">
+          </div>
+        </div>
+      </section>
+     
+      
+      <footer id="contact" class="bg-light text-center text-white set-footer-positon">
+        
+        <div class="container p-4 pb-0">
+       
+        <section class="mb-4">
+       
+        <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-facebook-f"></i
+        ></a>
+        
+        
+        <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #55acee;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-twitter"></i
+        ></a>
+        
+        
+        <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #dd4b39;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-google"></i
+        ></a>
+        
+     
+        <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #ac2bac;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-instagram"></i
+        ></a>
+       
+        <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #0082ca;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-linkedin-in"></i
+        ></a>
+        
+        <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #333333;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-github"></i
+        ></a>
+        </section>
+        
+        </div>
+       
+        <div class="text-center p-3" style="background-color: rgba(240, 187, 40, 0.923);">
+        © 2023 Copyright:
+        <a class="text-white" href="index.html"
+        ">IMDB.com
+        </a>
+        </div>
+      </footer>
+      </div>
+    <script src="./assets/js/index.js"></script>
+  </body>
+
+</html>
